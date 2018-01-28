@@ -1,0 +1,29 @@
+{
+  "name": "haymarket-btc-2",
+  "version": "1.0.0",
+  "description": "Bitcoin prices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "bitcoin",
+    "prices",
+    "Jay",
+    "Fallon",
+    "Undenary.com",
+    "Undenary"
+  ],
+  "author": "Jay Fallon",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "^4.2.3",
+    "normalize.css": "^7.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
