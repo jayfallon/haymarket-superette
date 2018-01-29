@@ -2,9 +2,17 @@ import Link from 'next/link';
 
 const Footer = props => (
 	<footer>
-		<div className="current-prices">*Current prices as of: {props.time}</div>
+		<div className="current-prices">
+			*Current prices as of: {props.time}.<br /> Powered by{' '}
+			<Link href="https://www.coindesk.com/price/">
+				<a>CoinDesk</a>
+			</Link>
+		</div>
 		<div className="copyright">
-			&copy;2018 - <a href="https://undenary.com">Undenary Creative</a>
+			&copy;2018 -{' '}
+			<Link href="https://undenary.com">
+				<a>Undenary Creative</a>
+			</Link>
 		</div>
 		<style jsx>{`
 			footer {
@@ -19,6 +27,7 @@ const Footer = props => (
 				color: #4a4a4a;
 				font-family: 'Hamster', sdans-serif;
 				font-size: 1.867rem;
+				text-align: center;
 			}
 			.copyright {
 				margin-top: 24px;
@@ -26,7 +35,7 @@ const Footer = props => (
 				font-family: 'VTCSuperMarketSaleTall', sans-serif;
 				font-size: 1rem;
 			}
-			.copyright a {
+			footer a {
 				color: #8cbcee;
 				text-decoration: none;
 			}

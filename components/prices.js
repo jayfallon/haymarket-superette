@@ -38,7 +38,6 @@ class Prices extends React.Component {
                         font-size: 4.667rem
                         display: grid;
                         grid-template-columns: auto auto;
-                        
                         grid-gap: 24px;
                     }
                     .key {

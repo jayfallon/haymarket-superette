@@ -34,7 +34,7 @@ const Index = props => (
 
 			h3.fresh span {
 				font-family: 'swingdancer', sans-serif;
-				font-size: 5.333rem;
+				font-size: 4rem;
 				color: #ff0000;
 			}
 			h1 {
@@ -80,6 +80,13 @@ Index.getInitialProps = async function() {
 	return {
 		time: data.time.updated,
 		bpi: data.bpi,
+	};
+
+	const resC = await fetch('https://api.coindesk.com/v1/bpi/currentprice/CNY.json');
+	const dataC = await res.json();
+
+	return {
+		cpi: data.bpi,
 	};
 };
 
